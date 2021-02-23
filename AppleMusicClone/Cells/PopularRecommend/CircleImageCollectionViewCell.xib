@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="CircleCollectionViewCell" reuseIdentifier="CircleCollectionViewCell" id="Y2v-Gk-7Yc" customClass="CircleImageCollectionViewCell" customModule="AppleMusicClone" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="287" height="424"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="whf-OB-oGl">
+                <rect key="frame" x="0.0" y="0.0" width="287" height="424"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="83A-xF-gWI">
+                        <rect key="frame" x="0.0" y="0.0" width="287" height="424"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="백예린 피쳐링" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eSE-Eg-OOE">
+                                <rect key="frame" x="0.0" y="0.0" width="72" height="16.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" systemColor="systemGrayColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nf1-ZE-JnQ">
+                                <rect key="frame" x="0.0" y="21.5" width="287" height="287"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Music" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vhW-Pr-53M">
+                                        <rect key="frame" x="218" y="5" width="59" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yerin" translatesAutoresizingMaskIntoConstraints="NO" id="1fB-i5-hcy">
+                                        <rect key="frame" x="30" y="30" width="227" height="227"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.71729810309999997" green="0.67683990910000003" blue="0.66030378369999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="1fB-i5-hcy" firstAttribute="leading" secondItem="nf1-ZE-JnQ" secondAttribute="leading" constant="30" id="5Z1-p6-XHV"/>
+                                    <constraint firstAttribute="trailing" secondItem="vhW-Pr-53M" secondAttribute="trailing" constant="10" id="Cc4-fL-xc2"/>
+                                    <constraint firstItem="1fB-i5-hcy" firstAttribute="top" secondItem="nf1-ZE-JnQ" secondAttribute="top" constant="30" id="cyM-2k-AcM"/>
+                                    <constraint firstItem="vhW-Pr-53M" firstAttribute="top" secondItem="nf1-ZE-JnQ" secondAttribute="top" constant="5" id="ooy-OE-kpY"/>
+                                    <constraint firstAttribute="trailing" secondItem="1fB-i5-hcy" secondAttribute="trailing" constant="30" id="w5E-6U-SFt"/>
+                                    <constraint firstAttribute="bottom" secondItem="1fB-i5-hcy" secondAttribute="bottom" constant="30" id="xwa-MO-8Ek"/>
+                                    <constraint firstAttribute="width" secondItem="nf1-ZE-JnQ" secondAttribute="height" multiplier="1:1" id="zf7-Ug-Qb2"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UYh-Kf-h0c">
+                                <rect key="frame" x="0.0" y="308.5" width="287" height="95.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="백예린 및 비슷한 아티스트" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CuE-7P-NCW">
+                                        <rect key="frame" x="56" y="37" width="175" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.47880230527935608" green="0.42804242477287985" blue="0.41430935778569927" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="UYh-Kf-h0c" secondAttribute="height" multiplier="3:1" id="Lgx-B6-lhI"/>
+                                    <constraint firstItem="CuE-7P-NCW" firstAttribute="centerX" secondItem="UYh-Kf-h0c" secondAttribute="centerX" id="TJp-zV-1dZ"/>
+                                    <constraint firstItem="CuE-7P-NCW" firstAttribute="centerY" secondItem="UYh-Kf-h0c" secondAttribute="centerY" id="Ykh-RJ-QN2"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gIU-2i-9wQ">
+                                <rect key="frame" x="0.0" y="404" width="287" height="20"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="QoL-oy-tvJ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="gIU-2i-9wQ" secondAttribute="trailing" id="6ge-FK-ply"/>
+                            <constraint firstItem="eSE-Eg-OOE" firstAttribute="leading" secondItem="83A-xF-gWI" secondAttribute="leading" id="CtB-sS-3Ho"/>
+                            <constraint firstItem="UYh-Kf-h0c" firstAttribute="leading" secondItem="83A-xF-gWI" secondAttribute="leading" id="IE2-3V-2eM"/>
+                            <constraint firstItem="UYh-Kf-h0c" firstAttribute="top" secondItem="nf1-ZE-JnQ" secondAttribute="bottom" id="QYU-o5-HzD"/>
+                            <constraint firstAttribute="trailing" secondItem="nf1-ZE-JnQ" secondAttribute="trailing" id="Tk1-ja-uWU"/>
+                            <constraint firstAttribute="bottom" secondItem="gIU-2i-9wQ" secondAttribute="bottom" id="aaU-QE-6HB"/>
+                            <constraint firstItem="gIU-2i-9wQ" firstAttribute="top" secondItem="UYh-Kf-h0c" secondAttribute="bottom" id="fED-Gz-z9p"/>
+                            <constraint firstItem="gIU-2i-9wQ" firstAttribute="leading" secondItem="83A-xF-gWI" secondAttribute="leading" id="g9R-Il-uMT"/>
+                            <constraint firstItem="nf1-ZE-JnQ" firstAttribute="leading" secondItem="83A-xF-gWI" secondAttribute="leading" id="mMF-ue-F16"/>
+                            <constraint firstAttribute="trailing" secondItem="UYh-Kf-h0c" secondAttribute="trailing" id="vBn-Ab-9tB"/>
+                            <constraint firstItem="nf1-ZE-JnQ" firstAttribute="top" secondItem="eSE-Eg-OOE" secondAttribute="bottom" constant="5" id="yDI-Yl-Heu"/>
+                            <constraint firstItem="eSE-Eg-OOE" firstAttribute="top" secondItem="83A-xF-gWI" secondAttribute="top" id="ypI-so-8gD"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="83A-xF-gWI" secondAttribute="bottom" id="DDH-z0-g6V"/>
+                    <constraint firstAttribute="trailing" secondItem="83A-xF-gWI" secondAttribute="trailing" id="XjC-Rt-ARr"/>
+                    <constraint firstItem="83A-xF-gWI" firstAttribute="top" secondItem="whf-OB-oGl" secondAttribute="top" id="lNL-lS-3Cb"/>
+                    <constraint firstItem="83A-xF-gWI" firstAttribute="leading" secondItem="whf-OB-oGl" secondAttribute="leading" id="sfT-gA-rGq"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="287" height="424"/>
+            <connections>
+                <outlet property="albumArtImageView" destination="1fB-i5-hcy" id="R4l-P7-Lts"/>
+                <outlet property="albumBgView" destination="nf1-ZE-JnQ" id="fLX-Kf-IrU"/>
+                <outlet property="footerView" destination="UYh-Kf-h0c" id="Lg2-be-IsU"/>
+                <outlet property="mainView" destination="83A-xF-gWI" id="wfS-N6-RDk"/>
+            </connections>
+            <point key="canvasLocation" x="-57.24637681159421" y="30.803571428571427"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="yerin" width="1200" height="807"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
