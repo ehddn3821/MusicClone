@@ -9,9 +9,11 @@ import UIKit
 
 class GenreCollectionViewCell: UICollectionViewCell {
 
+    @IBOutlet var albumImage: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         
+        albumImage.layer.cornerRadius = 10
     }
 
 }

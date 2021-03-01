@@ -19,6 +19,8 @@ class GenreTableViewCell: UITableViewCell {
         
         let nibName = UINib(nibName: "GenreCollectionViewCell", bundle: nil)
         genreCollectionView.register(nibName, forCellWithReuseIdentifier: "GenreCollectionViewCell")
+        
+        
     }
     
 }
@@ -44,7 +46,7 @@ extension GenreTableViewCell: UICollectionViewDelegateFlowLayout {
         
         let screenWidth = UIScreen.main.bounds.width
         
-        return CGSize(width: screenWidth*0.43, height: screenWidth*0.62)
+        return CGSize(width: screenWidth*0.43, height: screenWidth*0.55)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {

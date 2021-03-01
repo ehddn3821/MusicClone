@@ -91,7 +91,7 @@
                             <constraint firstItem="j4w-FE-tBU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wSq-iS-yTO"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="지금 듣기" id="eRf-9Q-qLA"/>
+                    <navigationItem key="navigationItem" title="지금 듣기" largeTitleDisplayMode="always" id="lES-Cl-ciK"/>
                     <connections>
                         <outlet property="albumArtImageView" destination="aMC-06-Lwz" id="VGd-0W-V7E"/>
                         <outlet property="mainTableView" destination="kbr-Dz-h2q" id="Qmj-1N-gfR"/>
@@ -372,6 +372,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="LJe-F6-JNZ">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" systemColor="systemPinkColor"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
