@@ -19,8 +19,8 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="인기 추천곡" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fLR-ZW-gX6">
-                        <rect key="frame" x="20" y="10" width="87" height="131"/>
-                        <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                        <rect key="frame" x="20" y="10" width="104.5" height="131"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
