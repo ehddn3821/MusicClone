@@ -24,7 +24,7 @@ class CircleImageCollectionViewCell: UICollectionViewCell {
         footerView.layer.cornerRadius = 10
         footerView.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
         albumArtImageView.clipsToBounds = true
-        albumArtImageView.layer.cornerRadius = albumArtImageView.frame.width / 2
+        albumArtImageView.layer.cornerRadius = UIScreen.main.bounds.width / 4
         
     }
 

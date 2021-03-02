@@ -10,6 +10,8 @@ import UIKit
 class GenreTableViewCell: UITableViewCell {
 
     @IBOutlet var genreCollectionView: UICollectionView!
+    @IBOutlet var titleLabel: UILabel!
+    @IBOutlet var fullBtn: UIButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()

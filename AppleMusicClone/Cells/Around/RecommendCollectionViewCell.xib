@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="RecommendCollectionViewCell" reuseIdentifier="RecommendCollectionViewCell" id="gTV-IL-0wX" customClass="RecommendCollectionViewCell" customModule="AppleMusicClone" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="373" height="282"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="373" height="282"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xF0-I0-IFr">
+                        <rect key="frame" x="0.0" y="0.0" width="373" height="282"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="추천 플레이리스트" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kWo-og-sKs">
+                                <rect key="frame" x="0.0" y="0.0" width="86.5" height="15"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                <color key="textColor" systemColor="systemGrayColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="히트 예감" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="STl-AP-Rd3">
+                                <rect key="frame" x="0.0" y="15" width="88.5" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Apple Music 팝" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IBk-zD-BAU">
+                                <rect key="frame" x="0.0" y="44" width="154" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" systemColor="systemGrayColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="candy" translatesAutoresizingMaskIntoConstraints="NO" id="lqZ-Xr-hT0">
+                                <rect key="frame" x="0.0" y="73" width="373" height="209"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="lqZ-Xr-hT0" secondAttribute="height" multiplier="373:209" id="jhu-zW-yau"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dK5-pn-UvV">
+                                <rect key="frame" x="0.0" y="228.5" width="373" height="53.5"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이 노래, 반드시 뜬다! 차트 점령을 예감케 하는 매력 만점 신곡." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fZn-TA-gpE">
+                                <rect key="frame" x="10" y="238.5" width="353" height="38.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lqZ-Xr-hT0" firstAttribute="leading" secondItem="xF0-I0-IFr" secondAttribute="leading" id="0lc-cJ-xhe"/>
+                            <constraint firstAttribute="trailing" secondItem="dK5-pn-UvV" secondAttribute="trailing" id="1ZT-ij-LR8"/>
+                            <constraint firstAttribute="trailing" secondItem="fZn-TA-gpE" secondAttribute="trailing" constant="10" id="1qe-K7-lb2"/>
+                            <constraint firstItem="kWo-og-sKs" firstAttribute="top" secondItem="xF0-I0-IFr" secondAttribute="top" id="1uN-2V-i2y"/>
+                            <constraint firstItem="fZn-TA-gpE" firstAttribute="leading" secondItem="xF0-I0-IFr" secondAttribute="leading" constant="10" id="56i-xv-0Tg"/>
+                            <constraint firstItem="IBk-zD-BAU" firstAttribute="leading" secondItem="xF0-I0-IFr" secondAttribute="leading" id="BUp-8e-xQu"/>
+                            <constraint firstItem="dK5-pn-UvV" firstAttribute="top" secondItem="fZn-TA-gpE" secondAttribute="top" constant="-10" id="GtN-jq-ca2"/>
+                            <constraint firstAttribute="bottom" secondItem="dK5-pn-UvV" secondAttribute="bottom" id="JNf-sj-1fs"/>
+                            <constraint firstAttribute="bottom" secondItem="fZn-TA-gpE" secondAttribute="bottom" constant="5" id="Tns-7l-bbb"/>
+                            <constraint firstItem="lqZ-Xr-hT0" firstAttribute="top" secondItem="IBk-zD-BAU" secondAttribute="bottom" id="TtL-EI-KnJ"/>
+                            <constraint firstAttribute="bottom" secondItem="lqZ-Xr-hT0" secondAttribute="bottom" id="XlX-vK-LGd"/>
+                            <constraint firstItem="dK5-pn-UvV" firstAttribute="leading" secondItem="xF0-I0-IFr" secondAttribute="leading" id="YGz-FH-sHG"/>
+                            <constraint firstItem="IBk-zD-BAU" firstAttribute="top" secondItem="STl-AP-Rd3" secondAttribute="bottom" id="Z2a-JO-jhL"/>
+                            <constraint firstAttribute="trailing" secondItem="lqZ-Xr-hT0" secondAttribute="trailing" id="ckR-FF-FMT"/>
+                            <constraint firstItem="STl-AP-Rd3" firstAttribute="leading" secondItem="xF0-I0-IFr" secondAttribute="leading" id="dWi-qY-Nee"/>
+                            <constraint firstItem="kWo-og-sKs" firstAttribute="leading" secondItem="xF0-I0-IFr" secondAttribute="leading" id="pVG-M1-n0I"/>
+                            <constraint firstItem="STl-AP-Rd3" firstAttribute="top" secondItem="kWo-og-sKs" secondAttribute="bottom" id="r29-6W-X7i"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="xF0-I0-IFr" secondAttribute="bottom" id="3xQ-wm-4Yz"/>
+                <constraint firstItem="xF0-I0-IFr" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="7sd-qn-WHr"/>
+                <constraint firstItem="xF0-I0-IFr" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="NMz-rX-Io1"/>
+                <constraint firstAttribute="trailing" secondItem="xF0-I0-IFr" secondAttribute="trailing" id="SWr-2N-1KX"/>
+            </constraints>
+            <size key="customSize" width="373" height="282"/>
+            <connections>
+                <outlet property="mainImageView" destination="lqZ-Xr-hT0" id="HCn-lh-Xri"/>
+            </connections>
+            <point key="canvasLocation" x="-436.95652173913049" y="17.410714285714285"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="candy" width="5760" height="3840"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

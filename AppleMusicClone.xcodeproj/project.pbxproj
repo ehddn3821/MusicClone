@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		352CAEB125ECED2D004E8E55 /* BrowseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352CAEB025ECED2D004E8E55 /* BrowseViewController.swift */; };
 		35AC89A125E53A2E00C9E885 /* GenreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AC899F25E53A2E00C9E885 /* GenreTableViewCell.swift */; };
 		35AC89A225E53A2E00C9E885 /* GenreTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35AC89A025E53A2E00C9E885 /* GenreTableViewCell.xib */; };
 		35AC89A625E53AF400C9E885 /* GenreCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AC89A425E53AF400C9E885 /* GenreCollectionViewCell.swift */; };
@@ -23,9 +24,14 @@
 		35CFDF2725E0E3C00077704F /* CircleImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35CFDF2525E0E3C00077704F /* CircleImageCollectionViewCell.xib */; };
 		35CFDF2E25E149E70077704F /* SquareCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CFDF2C25E149E70077704F /* SquareCollectionViewCell.swift */; };
 		35CFDF2F25E149E70077704F /* SquareCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35CFDF2D25E149E70077704F /* SquareCollectionViewCell.xib */; };
+		35F3A94C25EE558800698C06 /* RecommendCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F3A94A25EE558800698C06 /* RecommendCollectionViewCell.swift */; };
+		35F3A94D25EE558800698C06 /* RecommendCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35F3A94B25EE558800698C06 /* RecommendCollectionViewCell.xib */; };
+		35F3A95125EE561100698C06 /* RecommendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F3A94F25EE561100698C06 /* RecommendTableViewCell.swift */; };
+		35F3A95225EE561100698C06 /* RecommendTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35F3A95025EE561100698C06 /* RecommendTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		352CAEB025ECED2D004E8E55 /* BrowseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseViewController.swift; sourceTree = "<group>"; };
 		35AC899F25E53A2E00C9E885 /* GenreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreTableViewCell.swift; sourceTree = "<group>"; };
 		35AC89A025E53A2E00C9E885 /* GenreTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GenreTableViewCell.xib; sourceTree = "<group>"; };
 		35AC89A425E53AF400C9E885 /* GenreCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -44,6 +50,10 @@
 		35CFDF2525E0E3C00077704F /* CircleImageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CircleImageCollectionViewCell.xib; sourceTree = "<group>"; };
 		35CFDF2C25E149E70077704F /* SquareCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareCollectionViewCell.swift; sourceTree = "<group>"; };
 		35CFDF2D25E149E70077704F /* SquareCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SquareCollectionViewCell.xib; sourceTree = "<group>"; };
+		35F3A94A25EE558800698C06 /* RecommendCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendCollectionViewCell.swift; sourceTree = "<group>"; };
+		35F3A94B25EE558800698C06 /* RecommendCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommendCollectionViewCell.xib; sourceTree = "<group>"; };
+		35F3A94F25EE561100698C06 /* RecommendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendTableViewCell.swift; sourceTree = "<group>"; };
+		35F3A95025EE561100698C06 /* RecommendTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommendTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +79,10 @@
 		35AC899A25E5391B00C9E885 /* Around */ = {
 			isa = PBXGroup;
 			children = (
+				35F3A94A25EE558800698C06 /* RecommendCollectionViewCell.swift */,
+				35F3A94B25EE558800698C06 /* RecommendCollectionViewCell.xib */,
+				35F3A94F25EE561100698C06 /* RecommendTableViewCell.swift */,
+				35F3A95025EE561100698C06 /* RecommendTableViewCell.xib */,
 			);
 			path = Around;
 			sourceTree = "<group>";
@@ -133,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				35CFDF0725E0C7040077704F /* NowViewController.swift */,
+				352CAEB025ECED2D004E8E55 /* BrowseViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -220,8 +235,10 @@
 			files = (
 				35AC89A225E53A2E00C9E885 /* GenreTableViewCell.xib in Resources */,
 				35CFDF1025E0C7050077704F /* LaunchScreen.storyboard in Resources */,
+				35F3A95225EE561100698C06 /* RecommendTableViewCell.xib in Resources */,
 				35CFDF0D25E0C7050077704F /* Assets.xcassets in Resources */,
 				35CFDF2125E0E18B0077704F /* PopularRecommendTableViewCell.xib in Resources */,
+				35F3A94D25EE558800698C06 /* RecommendCollectionViewCell.xib in Resources */,
 				35AC89A725E53AF400C9E885 /* GenreCollectionViewCell.xib in Resources */,
 				35CFDF2F25E149E70077704F /* SquareCollectionViewCell.xib in Resources */,
 				35CFDF0B25E0C7040077704F /* Main.storyboard in Resources */,
@@ -237,11 +254,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				35AC89A625E53AF400C9E885 /* GenreCollectionViewCell.swift in Sources */,
+				35F3A94C25EE558800698C06 /* RecommendCollectionViewCell.swift in Sources */,
 				35CFDF2625E0E3C00077704F /* CircleImageCollectionViewCell.swift in Sources */,
 				35CFDF0825E0C7040077704F /* NowViewController.swift in Sources */,
 				35CFDF0425E0C7040077704F /* AppDelegate.swift in Sources */,
+				35F3A95125EE561100698C06 /* RecommendTableViewCell.swift in Sources */,
 				35CFDF2E25E149E70077704F /* SquareCollectionViewCell.swift in Sources */,
 				35CFDF2025E0E18B0077704F /* PopularRecommendTableViewCell.swift in Sources */,
+				352CAEB125ECED2D004E8E55 /* BrowseViewController.swift in Sources */,
 				35AC89A125E53A2E00C9E885 /* GenreTableViewCell.swift in Sources */,
 				35CFDF0625E0C7040077704F /* SceneDelegate.swift in Sources */,
 			);

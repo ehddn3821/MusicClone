@@ -39,16 +39,16 @@ class NowViewController: UIViewController {
         mainTableView.dataSource = self
         
         //tableView separator 없애기
-        mainTableView.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: .greatestFiniteMagnitude)
+//        mainTableView.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: .greatestFiniteMagnitude)
         
         let popNibName = UINib(nibName: "PopularRecommendTableViewCell", bundle: nil)
         mainTableView.register(popNibName, forCellReuseIdentifier: "PopularRecommendTableViewCell")
         let genNibName = UINib(nibName: "GenreTableViewCell", bundle: nil)
         mainTableView.register(genNibName, forCellReuseIdentifier: "GenreTableViewCell")
         
-        albumArtImageView.layer.shadowOpacity = 0.15
-        albumArtImageView.layer.shadowOffset = CGSize(width: 0, height: 5)
-        albumArtImageView.layer.shadowRadius = 10
+        albumArtImageView.layer.shadowOpacity = 0.1
+        albumArtImageView.layer.shadowOffset = CGSize(width: 0, height: 3)
+        albumArtImageView.layer.shadowRadius = 5
         albumArtImageView.layer.masksToBounds = false
     }
 
@@ -59,8 +59,10 @@ extension NowViewController: UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         if mainTableView.contentOffset.y <= 0 {
             rightButton.isHidden = false
+            navigationController?.navigationBar.backgroundColor = UIColor(named: "Label Color")
         } else {
             rightButton.isHidden = true
+            navigationController?.navigationBar.backgroundColor = UIColor(named: "MainColor")
         }
     }
 }
@@ -79,6 +81,7 @@ extension NowViewController: UITableViewDelegate, UITableViewDataSource {
             return cell
         } else {
             let cell = tableView.dequeueReusableCell(withIdentifier: "GenreTableViewCell", for: indexPath) as! GenreTableViewCell
+            cell.fullBtn.isHidden = true
             return cell
         }
     }
