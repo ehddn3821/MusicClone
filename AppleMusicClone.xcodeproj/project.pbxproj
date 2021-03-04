@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		351A58CA25F0FF2F0045F2A1 /* ArchiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351A58C925F0FF2F0045F2A1 /* ArchiveViewController.swift */; };
+		351A58D525F100930045F2A1 /* ArchiveTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351A58D325F100930045F2A1 /* ArchiveTableViewCell.swift */; };
+		351A58D625F100930045F2A1 /* ArchiveTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 351A58D425F100930045F2A1 /* ArchiveTableViewCell.xib */; };
 		352CAEB125ECED2D004E8E55 /* BrowseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352CAEB025ECED2D004E8E55 /* BrowseViewController.swift */; };
 		35AC89A125E53A2E00C9E885 /* GenreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AC899F25E53A2E00C9E885 /* GenreTableViewCell.swift */; };
 		35AC89A225E53A2E00C9E885 /* GenreTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35AC89A025E53A2E00C9E885 /* GenreTableViewCell.xib */; };
@@ -31,6 +34,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		351A58C925F0FF2F0045F2A1 /* ArchiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveViewController.swift; sourceTree = "<group>"; };
+		351A58D325F100930045F2A1 /* ArchiveTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveTableViewCell.swift; sourceTree = "<group>"; };
+		351A58D425F100930045F2A1 /* ArchiveTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArchiveTableViewCell.xib; sourceTree = "<group>"; };
 		352CAEB025ECED2D004E8E55 /* BrowseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseViewController.swift; sourceTree = "<group>"; };
 		35AC899F25E53A2E00C9E885 /* GenreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreTableViewCell.swift; sourceTree = "<group>"; };
 		35AC89A025E53A2E00C9E885 /* GenreTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GenreTableViewCell.xib; sourceTree = "<group>"; };
@@ -94,11 +100,13 @@
 			path = Search;
 			sourceTree = "<group>";
 		};
-		35AC899C25E5393D00C9E885 /* Storage */ = {
+		35AC899C25E5393D00C9E885 /* Archive */ = {
 			isa = PBXGroup;
 			children = (
+				351A58D325F100930045F2A1 /* ArchiveTableViewCell.swift */,
+				351A58D425F100930045F2A1 /* ArchiveTableViewCell.xib */,
 			);
-			path = Storage;
+			path = Archive;
 			sourceTree = "<group>";
 		};
 		35AC899D25E539B800C9E885 /* Genre */ = {
@@ -148,6 +156,7 @@
 			children = (
 				35CFDF0725E0C7040077704F /* NowViewController.swift */,
 				352CAEB025ECED2D004E8E55 /* BrowseViewController.swift */,
+				351A58C925F0FF2F0045F2A1 /* ArchiveViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -157,7 +166,7 @@
 			children = (
 				35AC899925E5391000C9E885 /* Now */,
 				35AC899A25E5391B00C9E885 /* Around */,
-				35AC899C25E5393D00C9E885 /* Storage */,
+				35AC899C25E5393D00C9E885 /* Archive */,
 				35AC899B25E5392500C9E885 /* Search */,
 			);
 			path = Cells;
@@ -239,6 +248,7 @@
 				35CFDF0D25E0C7050077704F /* Assets.xcassets in Resources */,
 				35CFDF2125E0E18B0077704F /* PopularRecommendTableViewCell.xib in Resources */,
 				35F3A94D25EE558800698C06 /* RecommendCollectionViewCell.xib in Resources */,
+				351A58D625F100930045F2A1 /* ArchiveTableViewCell.xib in Resources */,
 				35AC89A725E53AF400C9E885 /* GenreCollectionViewCell.xib in Resources */,
 				35CFDF2F25E149E70077704F /* SquareCollectionViewCell.xib in Resources */,
 				35CFDF0B25E0C7040077704F /* Main.storyboard in Resources */,
@@ -257,9 +267,11 @@
 				35F3A94C25EE558800698C06 /* RecommendCollectionViewCell.swift in Sources */,
 				35CFDF2625E0E3C00077704F /* CircleImageCollectionViewCell.swift in Sources */,
 				35CFDF0825E0C7040077704F /* NowViewController.swift in Sources */,
+				351A58D525F100930045F2A1 /* ArchiveTableViewCell.swift in Sources */,
 				35CFDF0425E0C7040077704F /* AppDelegate.swift in Sources */,
 				35F3A95125EE561100698C06 /* RecommendTableViewCell.swift in Sources */,
 				35CFDF2E25E149E70077704F /* SquareCollectionViewCell.swift in Sources */,
+				351A58CA25F0FF2F0045F2A1 /* ArchiveViewController.swift in Sources */,
 				35CFDF2025E0E18B0077704F /* PopularRecommendTableViewCell.swift in Sources */,
 				352CAEB125ECED2D004E8E55 /* BrowseViewController.swift in Sources */,
 				35AC89A125E53A2E00C9E885 /* GenreTableViewCell.swift in Sources */,

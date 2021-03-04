@@ -219,11 +219,15 @@
         <!--보관함-->
         <scene sceneID="6wf-0J-0YE">
             <objects>
-                <viewController id="xsK-ae-m0s" sceneMemberID="viewController">
+                <viewController id="xsK-ae-m0s" customClass="ArchiveViewController" customModule="AppleMusicClone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IL4-qF-XJv">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RfJ-R7-apa">
+                                <rect key="frame" x="0.0" y="140" width="428" height="638"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DD2-7h-dVo">
                                 <rect key="frame" x="0.0" y="778" width="428" height="65"/>
                                 <subviews>
@@ -286,15 +290,26 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="DD2-7h-dVo" firstAttribute="bottom" secondItem="zN1-yZ-Fs7" secondAttribute="bottom" id="3Z1-cK-4Hg"/>
+                            <constraint firstItem="RfJ-R7-apa" firstAttribute="trailing" secondItem="zN1-yZ-Fs7" secondAttribute="trailing" id="7MQ-UL-Q05"/>
                             <constraint firstItem="DD2-7h-dVo" firstAttribute="leading" secondItem="zN1-yZ-Fs7" secondAttribute="leading" id="bCe-3U-gdP"/>
+                            <constraint firstItem="DD2-7h-dVo" firstAttribute="top" secondItem="RfJ-R7-apa" secondAttribute="bottom" id="iI8-mw-AKP"/>
+                            <constraint firstItem="RfJ-R7-apa" firstAttribute="leading" secondItem="zN1-yZ-Fs7" secondAttribute="leading" id="ozi-9B-Hlr"/>
+                            <constraint firstItem="RfJ-R7-apa" firstAttribute="top" secondItem="zN1-yZ-Fs7" secondAttribute="top" id="pCd-Gb-RiT"/>
                             <constraint firstItem="DD2-7h-dVo" firstAttribute="trailing" secondItem="zN1-yZ-Fs7" secondAttribute="trailing" id="vKh-p1-84d"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="보관함" id="51M-ln-XDw"/>
+                    <navigationItem key="navigationItem" title="보관함" id="51M-ln-XDw">
+                        <barButtonItem key="rightBarButtonItem" title="편집" id="X5u-mD-OlH">
+                            <color key="tintColor" systemColor="systemPinkColor"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="archiveTableView" destination="RfJ-R7-apa" id="IMG-6r-YwF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bpt-Yy-BOO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="348" y="1558"/>
+            <point key="canvasLocation" x="347.66355140186914" y="1557.6673866090714"/>
         </scene>
         <!--검색-->
         <scene sceneID="2Ya-6i-8oI">
