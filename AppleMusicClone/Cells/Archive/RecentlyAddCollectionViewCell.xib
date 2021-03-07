@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="RecentlyAddCollectionViewCell" reuseIdentifier="RecentlyAddCollectionViewCell" id="gTV-IL-0wX" customClass="RecentlyAddCollectionViewCell" customModule="AppleMusicClone" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="207" height="255"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="207" height="255"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="always" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dSJ-VR-gVs">
+                        <rect key="frame" x="0.0" y="0.0" width="207" height="207"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="dSJ-VR-gVs" secondAttribute="height" multiplier="1:1" id="ckj-g8-FSp"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Album Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xpa-6Q-1Pf">
+                        <rect key="frame" x="0.0" y="210" width="98" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q3A-0F-aPr">
+                        <rect key="frame" x="0.0" y="234" width="91" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" systemColor="systemGrayColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="Xpa-6Q-1Pf" firstAttribute="top" secondItem="dSJ-VR-gVs" secondAttribute="bottom" constant="3" id="2XF-fK-spA"/>
+                <constraint firstItem="Xpa-6Q-1Pf" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Bf8-nG-9Wj"/>
+                <constraint firstItem="Q3A-0F-aPr" firstAttribute="top" secondItem="Xpa-6Q-1Pf" secondAttribute="bottom" constant="3" id="MjV-cy-8pK"/>
+                <constraint firstItem="dSJ-VR-gVs" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="OZs-Kl-DHb"/>
+                <constraint firstAttribute="trailing" secondItem="dSJ-VR-gVs" secondAttribute="trailing" id="knt-Oc-Ipv"/>
+                <constraint firstItem="Q3A-0F-aPr" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="oUx-lr-hSs"/>
+                <constraint firstItem="dSJ-VR-gVs" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="yXZ-F6-VQB"/>
+            </constraints>
+            <size key="customSize" width="207" height="255"/>
+            <point key="canvasLocation" x="203.62318840579712" y="174.44196428571428"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="always" width="5539" height="3693"/>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

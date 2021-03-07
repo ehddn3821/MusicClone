@@ -20,26 +20,37 @@ class ArchiveViewController: UIViewController {
         archiveTableView.delegate = self
         archiveTableView.dataSource = self
         
+        archiveTableView.rowHeight = UITableView.automaticDimension
+        archiveTableView.estimatedRowHeight = 200
+        
         let nibName = UINib(nibName: "ArchiveTableViewCell", bundle: nil)
         archiveTableView.register(nibName, forCellReuseIdentifier: "ArchiveTableViewCell")
+        let recentNibName = UINib(nibName: "RecentlyAddTableViewCell", bundle: nil)
+        archiveTableView.register(recentNibName, forCellReuseIdentifier: "RecentlyAddTableViewCell")
     }
 
 }
 
 extension ArchiveViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return archiveList.count
+        return archiveList.count + 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ArchiveTableViewCell", for: indexPath) as! ArchiveTableViewCell
-        cell.archiveImage.image = UIImage(systemName: archiveImageName[indexPath.row])
-        cell.archiveLabel.text = archiveList[indexPath.row]
-        cell.accessoryType = .disclosureIndicator
-        return cell
+        
+        if indexPath.row == archiveList.count {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "RecentlyAddTableViewCell", for: indexPath)
+            return cell
+            
+        } else {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "ArchiveTableViewCell", for: indexPath) as! ArchiveTableViewCell
+            cell.archiveImage.image = UIImage(systemName: archiveImageName[indexPath.row])
+            cell.archiveLabel.text = archiveList[indexPath.row]
+            cell.accessoryType = .disclosureIndicator
+            
+            return cell
+        }
+        
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 55
-    }
 }
